@@ -2,7 +2,7 @@
 ammout_due = 50
 
 # Making a list with accepeted coins in the machien
-coins_accepeted = [25, 10, 5]
+coins_accepeted = [50, 25, 10, 5]
 
 # Loop while the ammount due is greater than 0
 while ammout_due > 0:
