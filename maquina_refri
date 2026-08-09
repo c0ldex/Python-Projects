@@ -1,0 +1,18 @@
+# Giving the coke prince by initializing it
+ammout_due = 50
+
+# Making a list with accepeted coins in the machien
+coins_accepeted = [25, 10, 5]
+
+# Loop while the ammount due is greater than 0
+while ammout_due > 0:
+    print(f"Amount Due: {ammout_due}")
+    # Get the coin
+    coin = int(input("Insert Coin: "))
+    # If the coin is acceptable or not subtract from the ammount due, if not it will just loop back again
+    if coin in coins_accepeted:
+        ammout_due = ammout_due - coin
+
+# Once out of the loop, your change is displayed,
+# OBS: i would always get a negative result so i had to dig and find a way to invert a value and it worked.
+print(f"Change Owed: {abs(ammout_due)}")
